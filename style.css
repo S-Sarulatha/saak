@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-link a:hover {
+    text-decoration: underline;
+    color: #1D232c;
+
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+
+.fa-solid fa-bars {
+    display: flex;
+    float: right;
+}
+
+.side-nav-bar {
+    background-color: rgb(29, 28, 28);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    display: none;
+
+}
+
+.side-nav-bar-link {
+    margin-bottom: 30px;
+
+
+}
+
+.side-nav-bar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-nav-bar-link a:hover {
+    text-decoration: underline;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.header-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1D232c;
+    color: white;
+    cursor: pointer;
+}
+
+.services {
+    padding: 20px;
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.service-container-2 div {
+    background-color: grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* media query */
+
+@media screen and (max-width:600px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .service-container-1 {
+        display: none;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+    }
+
+}
