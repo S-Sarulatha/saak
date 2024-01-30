@@ -35,7 +35,7 @@
     </nav>
 
     <div class="side-nav-bar">
-        <p style="text-align: right;" onclick="hideNavbar()">
+        <p style="text-align: right;" onclick="hidenavbar()">
             <i class="fa-solid fa-xmark"></i>
         </p>
         <div class="side-nav-bar-links">
@@ -46,23 +46,32 @@
         </div>
     </div>
 
-<div class="container">
-    <h1 style="text-align: center;color: #333;">Contact Us</h1>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <div class="container">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="remember-forgot">
+                <form >
+                <input type="checkbox"><p><i><b>&nbsp;&nbsp;Remember Me</b></i></p><p><i><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=" ">Forgot Password</a></b></i></p>
+        </form>
+    </div>
+    <div>
+        <button type="button" class="button-login"id="error" class="login" onclick="login()"><h3>Login</h3></button>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <input type="submit" value="Submit">
+    </div>
+    <p id="error-message"></p>
     </form>
-</div>
+    </div>
 
-
+    
     <div class="footer">
         <div class="footer-container">
             <div class="footer-box-1">
@@ -80,7 +89,7 @@
         <p>sarulatha2316@gmail.com</p>
         <p>akshayarajkumar2609@gmail.com</p>
     </div>
-    <script src="index.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

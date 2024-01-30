@@ -158,6 +158,9 @@ body {
     border-radius: 10px;
     padding:10px;
 }
+.new-arrival-container img{
+    border-radius: 10px;
+}
 .footer{
     margin-top: 20px;
     padding: 40px;
@@ -240,6 +243,31 @@ input[type="submit"]:hover {
     flex-basis: 20%;
     position: relative;
     border-radius: 10px;
+}
+
+.remember-forgot{
+    display: -webkit-inline-box;
+}
+
+
+.button-login {
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%; /* Set the width of the button */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+button:hover {
+    background-color:rgb(59, 59, 59) ;
+}
+
+#error {
+    color: white;
+    margin-top: 10px;
 }
 /* media query */
 
