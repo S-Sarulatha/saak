@@ -2,12 +2,11 @@ var sidenav = document.querySelector(".side-nav-bar")
 
 
 
-function shownavbar() {
+function showNavbar() {
     sidenav.style.left = "0"
-
-
 }
-function hidenavbar() {
-    sidenav.style.left = "-60px"
+function hideNavbar() {
+    sidenav.style.left = "-60%"
 
-}
+
+    }
